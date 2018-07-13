@@ -45,8 +45,8 @@ io.on("connection", function(socket){
 		   position: data.position
 		}
 		socket.emit("MOVE", currentUser);
-		socket.broadcast.emit("MOVE", currentUser);
-	    console.log(data.name + "funcion_move " + data.position + "Cantidad Clientes: " + clients.length);
+		//socket.broadcast.emit("MOVE", currentUser);
+	    //console.log(data.name + "funcion_move " + data.position + "Cantidad Clientes: " + clients.length);
 		
 		});
 		
